@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="ui">
+  <div class="stats">
+    <div>💰 Форк-коины: <span id="money">0</span></div>
+    <div>🎒 Рюкзак: <span id="bagCount">0</span>/<span id="bagMax">5</span></div>
+    <div id="tier-name" style="color: #00ffcc; font-weight: bold;">Тир: Обычный</div>
+  </div>
+  
+  <div class="npc-controls">
+    <div id="buyer-zone" class="hint">🛒 Скупщик Жора: <button onclick="sellItems()">ПРОДАТЬ ВСЁ</button></div>
+    <div id="smith-zone" class="hint">🛠️ Мастер Форк: <button onclick="buyUpgrade()">УЛУЧШИТЬ ДО <span id="nextTierText">Бронзы</span> ($<span id="upgradeCost">300</span>)</button></div>
+  </div>
+</div>
+
+<div id="joystick-container">
+  <div id="joystick-base">
+    <div id="joystick-stick"></div>
+  </div>
+</div>
+
+<canvas id="game"></canvas>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
